@@ -1,0 +1,147 @@
+/* Global Background */
+body {
+    background: linear-gradient(135deg, #0a0a0a, #111111); /* Rich dark tones with slight depth */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Section Structure */
+.full-screen {
+    min-height: 100vh;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero-background h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-background p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: #35dfb4;
+    color: #000;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: #00cc66;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #35dfb4 !important;
+}
+
+.navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #35dfb4;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover:after {
+    width: 100%;
+}
+
+/* About Section */
+.about-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid #35dfb4;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.4);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #35dfb4;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #35dfb4;
+    margin-top: 20px;
+}
+
+ul.list-unstyled li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+}
+
+ul.list-unstyled li i {
+    margin-right: 10px;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+}
+
+ul.list-unstyled li i:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    background-color: #111;
+    color: #35dfb4;
+    border: 1px solid #35dfb4;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #35dfb4;
+    color: #000;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00cc66;
+    transform: scale(1.05);
+}
+
+#about,
+#projects,
+#contact {
+    background: inherit; /* Inherit the same background from body */
+}
